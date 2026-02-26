@@ -25,3 +25,8 @@ a series of if/else if statements use the strcmp function to determine which cha
 wants to send, and then send that character to the terminal using UART. Finally, letterDone is
 reset to 0, the character array is cleared (filled in with 0s using memset), and the program
 returns to the beginning of the loop, waiting for the next character.
+
+SET UP INSTRUCTIONS:
+The only cable you need is the power cable, with one end plugged up to your PC and
+the other end to your MSP430. On MobaXterm (or Putty), set the baud rate as 115200, data bits
+to 8, stop bits to 1, parity to none, and flow control to none.
