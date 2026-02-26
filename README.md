@@ -19,8 +19,8 @@ and checks the switch again to ensure it’s really pressed. The ISR then sets t
 letterDone (initialized as 0) to 1.
 
   In the main function, the program first configures the ports, enables interrupts, and calls the
-UART_setup() function. Then, within an infinite while loop, the program waits until letterDone is
-1. Once this happens, the null terminator is added to letter[index], and index is reset to 0. Then,
+UART_setup() function. Then, within an infinite while loop, the program waits until letterDone is 1. 
+Once this happens, the null terminator is added to letter[index], and index is reset to 0. Then,
 a series of if/else if statements use the strcmp function to determine which character the user
 wants to send, and then send that character to the terminal using UART. Finally, letterDone is
 reset to 0, the character array is cleared (filled in with 0s using memset), and the program
